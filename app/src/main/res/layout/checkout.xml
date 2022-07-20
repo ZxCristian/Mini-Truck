@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <ImageView
+            android:id="@+id/imageName"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/trucklogo" />
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageName"
+            android:paddingTop="10dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:layout_toEndOf="@+id/Price1"
+            android:paddingTop="5dp"
+            android:text=" "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/Price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:layout_toEndOf="@+id/imageName"
+            android:paddingTop="5dp"
+            android:text="Price: ₱"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/Quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Price"
+            android:layout_toEndOf="@+id/Quantity1"
+            android:paddingTop="5dp"
+            android:text=" "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/Quantity1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Price"
+            android:layout_toEndOf="@+id/imageName"
+            android:paddingTop="5dp"
+            android:text="Quantity: "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/Subtotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Quantity"
+            android:layout_toEndOf="@+id/SubTotal1"
+            android:paddingTop="5dp"
+            android:text=" "
+            android:textColor="@color/red"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/SubTotal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Quantity"
+            android:layout_toEndOf="@+id/imageName"
+            android:paddingTop="5dp"
+            android:text="Subtotal: ₱"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Subtotal"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/itemUpdate"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="Update"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/itemDelete"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

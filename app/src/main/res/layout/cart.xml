@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orders"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:horizontalSpacing="10dp"
+        android:paddingTop="5dp"
+        android:verticalSpacing="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:text="Total: ₱"
+    android:textSize="20sp"
+    android:background="@color/white"
+    android:textColor="@color/black"
+    android:textColorHighlight="@color/white"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/Total"
+        android:text="0"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:paddingRight="100dp"
+            android:textColor="@color/red"
+        android:textColorHighlight="@color/white"/>
+
+        <Button
+            android:id="@+id/checkout"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape2"
+            android:text="Checkout"
+            android:layout_gravity="right"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

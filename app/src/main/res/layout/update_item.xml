@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ITEM Name"
+        android:background="@color/purple_500"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:id="@+id/ItemName"
+        android:textColor="#FFF"/>
+
+
+    <!-- Subtotal row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <!--txt-->
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Price: ₱"
+            android:textSize="20sp"
+            android:paddingLeft="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/red"/>
+
+        <!-- empty space that will fill "subtotal" and "price", using layout_weight -->
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0"
+            android:layout_height="0dp"/>
+
+        <!-- price -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Price"
+            android:id="@+id/ItemPrice"
+            android:textColor="@color/red"
+            android:paddingRight="135dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Enter Quantity"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:id="@+id/Quantity"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/Update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Update"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:id="@+id/sub1"
+        android:visibility="gone"/>
+
+</LinearLayout>
